@@ -11,7 +11,7 @@ programavimo kalbą.
 Sutartiniai žymėjimai
 ---------------------
 
-- :term:`išvestis` - terminas, kurio paaiškinimą galiter rasti terminų žodyne.
+- :term:`išvestis` - terminas, kurio paaiškinimą galite rasti terminų žodyne.
 
 - *(angl. Text User Interface (TUI))* - terminas pateiktas anglų kalba,
   skliausteliuose nurodytas termino trumpinys.
