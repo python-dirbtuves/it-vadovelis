@@ -10,17 +10,20 @@ env/bin/sphinx-build: env/bin/pip
 env/bin/pip:
 	python -m venv env
 
+env/bin/livereload: env/bin/pip
+	env/bin/pip install livereload
+
 
 .PHONY: help
 help:
 	@echo html    - build html version
+	@echo run     - run livereload server on build directory
 
 
 .PHONY: html
 html:
 	$(SPHINXBUILD) -b html $(SOURCEDIR) $(BUILDDIR) $(SPHINXOPTS)
 
-
-.PHONY: show
-show:
-	xdg-open build/index.html
+.PHONY: run
+run: env/bin/livereload
+	env/bin/livereload build

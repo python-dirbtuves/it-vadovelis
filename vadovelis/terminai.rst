@@ -165,4 +165,18 @@ Terminų žodynas
       pasiekti :term:`terminalą <terminalas>` iš grafinė sąsajos.
 
    vykdomasis failas
-      TODO
+      Kiekvienas failas turi tris esminius leidimus, leidimą skaityti, rašyti
+      ir vykdyti. Leidimas, skaityti reiškia, kad yra suteikta teisė skaityti
+      failo turinį, leidimas rašyti reiškia, kad yra suteikta tiesė keisti
+      failo turinį, leidimas vykdyti, reiškia kad failas gali būti įvykdytas
+      kaip programa.
+
+      Failo teises galima sužinoti `ls` komandos pagalba, pavyzdžiui::
+
+        $ ls -l
+        -rwxr-xr-x 6 user users 526 2018-05-16 17:09 programa.py
+           ^  ^  ^
+
+      Iš šios komandos :term:`išvesties <išvestis>` matome, kad failas
+      pavadinimu `programa` yra vykdomasis, kadangi jis turi žymę `x`, kuri
+      reiškia, kad failas turi vykdymo teisę *(angl. executable)*.
